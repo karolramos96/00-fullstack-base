@@ -1,0 +1,74 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FONTS */
+h1 {
+    color: #4F4F4F;
+    font-size: 35px;
+}
+
+h2 {
+    color: #bfbfbf;   
+    font-size: 25px;
+}
+
+/* SEÇÃO SOBRE */
+.secao-sobre {
+    background-color: white;
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*tela 600px*/
+@media only screen and (max-width:500px) {
+    .secao-sobre {
+        background-color: #8470FF;
+    }
+}
+.sobre-conteudo__img {
+    margin-top: 80px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}  
+    
+.sobre-conteudo {
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+}
+
+.sobre-conteudo__redes-sociais {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 90px;
+}
+
+.sobre-conteudo__redes-sociais img {
+    width: 67px;
+    height: 66px;
+    margin-left: 40px;
+}
+.sobre-conteudo__redes-sociais img:hover {
+    filter: grayscale(100%);
+    filter: opacity(0.5);
+}
+
+h2 a:hover {
+    color: #8470FF;
+}
+
+
