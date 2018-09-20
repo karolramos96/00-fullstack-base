@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{Reprograma} - Login</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="login-page">
+		<div class="form">
+			<form class="login-form" method="post">
+				<input id="nome" type="text" placeholder="username" />
+				<input id= "senha" type="password" placeholder="password" />
+				<p id="mensagem"></p>
+				<button id="btn">login</button>
+			</form>
+		</div>
+	</div>
+	<script>
+	var btn = document.getElementById('btn');
+	btn.addEventListener('click', function(event){
+		var nome= document.getElementById('nome').value;
+		var senha= document.getElementById ('senha').value;
+		event.preventDefault();
+
+	if (nome =="admin" && senha =="admin") {
+		document.getElementById('mensagem').textContent='sucesso';
+	}else{ 
+		document.getElementById('mensagem').textContent='error';
+	}
+	});
+	</script>
+</body>
+
+</html>
