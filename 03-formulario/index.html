@@ -14,13 +14,13 @@
 
         <div>
             <label for="texto">Usuário</label>
-            <input type="text" name="texto" class="half-col" id="b">
+            <input id="user" type="text" name="texto" class="half-col">
         </div>
 
         <div>
             <label  for="texto">Senha</label>
-            <input type="password" name="texto" class="half-col" id="password">
-            <button id="c"> Checar senha </button>
+            <input  id="password" type="password" name="texto" class="half-col">
+            <button id="btn1" class="btn"> Checar senha </button>
         </div>
 
         <div>
@@ -55,8 +55,8 @@
 
         <div>
             <label for="texto">Escolha um valor</label>
-            <input type="text" name="valor">
-            <button class="btn btn_grey"> Checar valor </button>
+            <input id="valor" type="number" name="valor">
+            <button id="btn5" class="btn btn_grey"> Checar valor </button>
         </div>
         
         <div>
@@ -70,21 +70,20 @@
             <input class="btn btn_purple" type="submit" value="Enviar">
         </div>
     </form>
-    <script type="text/javascript">
-    
-    var btn = document.querySelector ("#c");
-    btn.addEventListener ('click', function() {
-    var u = document.querySelector ("#b").value;
-        alert (u);
+    <script>
+    var btn1 = document.getElementById('btn1');
+    btn1.addEventListener ('click', function(event){
+        event.preventDefault();
+        var user = document.getElementById('user').value;
+        var password = document.getElementById('password').value;
+    if (user =="karolramos" && password.length >6){
+        alert ("bem-vindo");
+    }else{
+        alert ("senha inválida");
+    }
     });
-
     
     
     </script>
-
-
-
-
-</script>
 </body>
 </html>
