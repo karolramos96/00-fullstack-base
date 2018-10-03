@@ -7,6 +7,14 @@ botao.addEventListener('click', function(event){
     const valor = document.getElementById("transacaoInputMoney");
     const data = document.getElementById("transacaoInputDate");
 
+    if (nome.value ==""){
+        alert("insira o nome");
+    } else if (valor.value ==""){
+        alert("insira valor");
+    } else if (data.value =="") {
+        alert ("insira data");
+    }else {
+    
     const linha =document.createElement("tr");
 
     const colunaNome = document.createElement("td");
@@ -26,4 +34,6 @@ botao.addEventListener('click', function(event){
     linha.appendChild(colunaData);
 
     tabela.appendChild(linha);
+}
+    
 });
